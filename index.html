@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang=”fr”>
+    <head>
+    <meta charset="UTF-8">
+    <title> GreenITea </title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+
+
+
+
+
+    <div class="one"> <div class="title"> GreenITea </div></div>
+    <div class="corp_centre">
+      <div class="two">
+        <div id="div1">
+
+          <h1>Strategie</h1>
+          <input class="show" type="button" value="Add to favorites">
+           <p>L'étape de stratégie permet de déterminer la pertinence et les enjeux du projet</p>
+           <button id="bouton1" type="button" onclick="show(1)" value="^"></button>
+           <div id="containerContent">
+            <div id="strategieMarker"></div>
+          </div>
+          
+          <h1>Specifications</h1>
+          <p>Les spécifications regroupent les éléments de cadrage projet, les moyens mis en oeuvre, les objectfis et contraintes du proijet sur toute la durée de vie du profuit cible. Indépendamment du type de gestions projet: AGILE ou cycle en V class...</p>
+          <button id="bouton2" type="button" onclick="show(2)" value="^"></button>
+          <div id="containerSpecifications">
+           <div id="specificationsMarker"></div>
+          </div>
+  
+          <h1>Ux/Ui</h1>
+          <p>Les étapes et méthodes de conceptioon des services numériques pour définir les meilleures solutions d'interactions avec l'utilisateur.</p>
+          <button id="bouton3" type="button" onclick="show(3)" value="^"></button>
+          <div id="containerUx/Ui">
+            <div id="Ux/UiMarker"></div>
+          </div>
+
+          <h1>Contenus</h1>
+          <p>Tous les éléments d'un service numériques disponibles pour l'utilisateur final.</p>
+          <button id="bouton4" type="button" onclick="show(4)" value="^"></button>
+          <div class="containerContenus">
+            <div id="contenusMarker"></div>
+          </div>
+
+          <h1>Front-end</h1>
+          <p>Ensemble des composants en opréation sur un terminal pour permettre l'utilisation d'un service numérique.</p>
+          <button id="bouton5" type="button" onclick="show(5)" value="^"></button>
+          <div id="containerFrontEnd">
+            <div id="frontEndMarker"></div>
+          </div>
+
+          <h1>Architecture</h1>
+          <p>Elle définit l'ensemble des typologies de coposants de services techniques communs qui s(interposent entre les composatns applicatifs et les composants matériels pour gérer ces ressources physiques: composants de gestion des ressources.</p>
+          <button id="bouton6" type="button" onclick="show(6)" value="^"></button>
+          <div id="containerArchitecture">
+            <div id="architectureMarker"></div>
+          </div>
+
+          <h1>Back-end</h1>
+          <p>Le backend représente la traductionn informatique des processus métiers, les moyens techniques et données mis en oeuvre pour leur utilisation, ainsi que toutes les interactions externes mises en oeuvres pour leur réalisation.</p>
+          <button id="bouton7" type="button" onclick="show(7)" value="^"></button>
+          <div id="containerBackEnd">
+            <div id="backEndMarker"></div>
+          </div>
+
+          <h1>Hébergement</h1>
+          <p>Moyens mis en oeuvre pour permettre l'utilisation d'un service numérique par des utilisateurs distants.</p>
+          <button id="bouton8" type="button" onclick="show(8)" value="^"></button>
+          <div id="containerHebergement">
+            <div id="hebergementMarker"></div>
+          </div>
+
+      </div>
+    </div>
+      
+      <div class="three">Trois</div>
+    </div>
+    <div class="four"><input id="button" type="button" value="Afficher les résultats" accesskey="0" onclick="afficher()"></div>
+
+    <script src="main.js"></script>
+    <script type="text/javascript" src="data.json"></script>
+</body>
+</html>
