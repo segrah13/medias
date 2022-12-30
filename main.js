@@ -1,3 +1,24 @@
+let show1=document.getElementById("containerContent");
+let show2=document.getElementById("containerSpecifications");
+let show3=document.getElementById("containerUx/Ui");
+let show4=document.getElementById("containerContenus");
+let show5=document.getElementById("containerFrontEnd");
+let show6=document.getElementById("containerArchitecture");
+let show7=document.getElementById("containerBakcEnd");
+let show8=document.getElementById("containerHebergement");
+
+let statusArray = [
+   {object: show1, state: false, key: "show1"},
+   {object: show2, state: false, key: "show2"},
+   {object: show3, state: false, key: "show3"},
+   {object: show4, state: false, key: "show4"},
+   {object: show5, state: false, key: "show5"},
+   {object: show6, state: false, key: "show6"},
+   {object: show7, state: false, key: "show7"},
+   {object: show8, state: false, key: "show8"}
+]
+
+
 function readTextFile(file, callback) {
    var rawFile = new XMLHttpRequest();
    rawFile.overrideMimeType("application/json");
@@ -66,39 +87,17 @@ function addElement(data) {
  }
 
  function show(number){
-   let show1=document.getElementById("containerContent");
-   let show2=document.getElementById("containerSpecifications");
-   let show3=document.getElementById("containerUx/Ui");
-   let show4=document.getElementById("containerContenus");
-   let show5=document.getElementById("containerFrontEnd");
-   let show6=document.getElementById("containerArchitecture");
-   let show7=document.getElementById("containerBakcEnd");
-   let show8=document.getElementById("containerHebergement");
-   if (number == 1){
-      show1.style.display="block";
-   }
+
+   var key = "show" + number
    
-   
-   if (number == 2){
-      show2.style.display="block";
+   index =  statusArray.findIndex((obj => obj.key == key));
+
+   if(statusArray[index].state == false){
+      statusArray[index].object.style.display = "block"
+      statusArray[index].state = true
+   }else{
+      statusArray[index].object.style.display = "none"
+      statusArray[index].state = false
    }
-   if (number == 3){
-      show3.style.display="block";
-   }
-   if (number == 4){
-      show4.style.display="block";
-   }
-   if (number == 5){
-      show5.style.display="block";
-   }
-   if (number == 6){
-      show6.style.display="block";
-   }
-   if (number == 7){
-      show7.style.display="block";
-   }
-   if (number == 8){
-      show8.style.display="block";
-   }
-   
+
  }
