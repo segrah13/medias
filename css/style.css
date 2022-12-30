@@ -93,6 +93,6 @@ h1{
   padding: 10px;
 }
 
-#containerSpecifications #containerContent #containerUx/Ui #containerContenus #containerFrontEnd #containerArchitecture #containerBakcEnd #containerHebergement{
+.content{
   display: none;
 }
